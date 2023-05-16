@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Converter</title>
+    <!---CSS-->
+    <link rel="stylesheet" href="./src/Css/reset.css">
+    <link rel="stylesheet" href="./src/Css/header.css">
+    <link rel="stylesheet" href="./src/Css/styles.css">
+    <link rel="stylesheet" href="./src/Css/footer.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  </head>
+ <body>
+    <header>
+        <h1>Dev Converter</h1>
+    </header>
+    <main>
+        <form id="form">
+            <section class="inputs-conteiner">
+                <div class="form-group">
+                    <label for="value-real">Valor a ser convetido(R$)</label>
+                    <input type="number"
+                    placeholder="R$20,00"
+                    id="value-real"
+                    nome="value-real"
+                    max="10000000"   
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="currency">Escolha a moeda</label>
+                    <select id="currency">
+                        <option value="">Selecione...</option>
+                        <option value="eur">Euro</option>
+                        <option value="dol">Dólar</option>
+                    </select>
+                </div>
+                    
+            </section>
+            <Button type="submit">Converter</Button>
+        </form>
+        <h2 id="result"></h2>
+    </main>
+
+    <footer>
+        &copy; $Dev-Converter, 2023. Todos os direitos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+ </body>
+
+</html>
